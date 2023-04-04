@@ -1,0 +1,53 @@
+<script>
+
+
+// task
+
+    let arr1 = [1,9,2,3,5,7,8]; // find missing number
+    let arr2 = [1,9,2,3,5,7,8]; // add missing number
+
+    
+
+
+    var emptyToFill = [];
+
+
+
+
+    function findMissingNumber (arr)
+    {
+        
+        
+        let min = Math.min(...arr);
+        let max = Math.max(...arr);
+        let result = [];
+        
+        for (let index = min; index < max + 1; index++) {
+            console.log(max)
+            if (!arr.includes(index)) {
+                emptyToFill.push(index)
+                
+            }
+            else {
+                emptyToFill.push(index)
+                
+            }
+            
+        }
+
+
+    }
+    
+
+    findMissingNumber(arr1.sort())
+
+    console.log(emptyToFill, "here");
+
+
+
+
+
+
+
+
+</script>

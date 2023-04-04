@@ -1,0 +1,5 @@
+
+
+stringArr[index].match(/[a-zA-Z]/) // checking character in array
+
+replace(/,/g,"")); // replacing comma or any special character from array

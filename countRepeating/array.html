@@ -1,0 +1,18 @@
+<script>
+    // Count repeating element only those who continuing repeating...
+    // count which element or char repeating with value how mnay time they repeated.
+
+    let arr = [1, 2, 2, 3, 3, 4, 5, 6, 1];
+
+    let result = arr.filter((item, index, array) => {
+        return array.indexOf(item) === index;
+    });
+
+    const str = arr.join("");
+    const pattern = /([1-9])\1+/g;
+    const matches = str.match(pattern);
+
+    console.log(matches); 
+
+
+</script>

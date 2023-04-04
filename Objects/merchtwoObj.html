@@ -1,0 +1,35 @@
+<script>
+    let obj = {
+        username : "test",
+    }
+    let obj2 = {
+        role : "admin",
+        add : {
+            city : "pune"
+        }
+    }
+
+    console.log(obj2, "here old")
+
+    // let app = {
+    //     ...obj,
+    //     ...obj2
+    // }
+
+    // or
+    // It is shallow copy
+    // let app = Object.assign(obj,obj2);
+    // app.role = "admin new";
+
+    // or
+    // deepcopy
+
+    let app = Object.assign(obj,obj2);
+    let DeepCopy = JSON.parse(JSON.stringify(app));
+
+    DeepCopy.add.city = "Mumbai";
+    
+
+    
+    console.log(DeepCopy)
+</script>

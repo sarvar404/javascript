@@ -1,0 +1,10 @@
+<script>
+    let arr = ['one', 'two', 'three'];
+
+    let shallowcopy = [...arr];
+    shallowcopy.splice(1,0, "five","six");
+    console.log(shallowcopy)
+    shallowcopy.splice(1,1, "five","six");
+
+    console.log(shallowcopy)
+</script>

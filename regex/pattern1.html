@@ -1,0 +1,22 @@
+<script>
+
+
+    let msg = "something from here";
+
+    let pattern = /e/g;
+
+    let result = [];
+
+    for (let index = 0; index < Array.from(msg).length; index++) {
+
+        if (pattern.exec(Array.from(msg[index]).join(""))) {
+            result += Array.from(msg[index]);
+        }
+        
+    }
+
+    console.log(Array.from(result).length);
+
+
+
+</script>

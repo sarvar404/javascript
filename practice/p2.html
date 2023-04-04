@@ -1,0 +1,22 @@
+<script>
+
+
+let arr = ['1','2','3','x','y','z'];
+let result = [];
+
+
+
+for (let index = 0; index < arr.join("").length; index++) {
+
+    if (arr[index].match(/[a-zA-Z]/)) {
+        result += arr.indexOf(arr[index])
+    }else{
+        result += arr[index]
+    }
+
+    
+}
+
+console.log(result)
+
+</script>

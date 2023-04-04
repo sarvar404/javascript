@@ -1,0 +1,20 @@
+<script>
+    // lexical
+    // A function that is lexically within another function get access to the scope of the outer function. ( inner function can get access to their parent functions variables )
+
+    var a = "something";
+
+    function parent() {
+        // var b = "i m from parent";
+
+        // child();
+
+        // function child() {
+        //     var c = "i m from child";
+        //     console.log(a+b+c);
+        // }
+
+        console.log(a);
+    }
+    parent();
+</script>

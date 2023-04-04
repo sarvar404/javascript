@@ -1,0 +1,14 @@
+<script>
+    var x = 10;
+
+    function Outer() {
+        var y = 10;
+        function bar(){
+            return x + y;
+        }
+        return bar;
+    }
+
+    let closure = Outer();
+    console.log(closure());
+</script>

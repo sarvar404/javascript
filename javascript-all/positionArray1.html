@@ -1,0 +1,24 @@
+<script>
+    
+
+    const stringArr = ['4','3','5','x','y','z'];
+
+    for (let index = 0; index < stringArr.join("").length; index++) {
+        
+
+        if (stringArr[index].charAt(0).match(/[a-zA-Z]/)) {
+            console.log(stringArr.indexOf(stringArr[index]));
+        }else{
+            console.log(stringArr[index]);
+        }
+        
+    }
+
+    const stringArr2 = ['4',[[[[[['3','c']]]]]],'3','5','x','y','z'];
+
+     console.log(stringArr2.join("").replace(/,/g,""));
+
+    
+
+    
+</script>

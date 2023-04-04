@@ -3,6 +3,21 @@
 
 // ek function hai usme firse kuch return ho rha hai. to yeh hogya currying.
 
+    function sum(x){
+        return (y) => {
+            return (z) => {
+                return x + y + z;
+            }
+        }
+    }
+
+
+    // call the function here
+
+    let callFunction = sum(10)(20)(30);
+
+    console.log(callFunction)
+
 
 
 </script>

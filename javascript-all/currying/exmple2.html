@@ -1,0 +1,23 @@
+<script>
+
+
+    let obj = {
+        username : "mohammed sarvar",
+        role : "Admin"
+    }
+
+
+    function getInfo (obj) {
+        return (username, role) => {
+            return obj.username + " " + obj.role;
+        }
+    }
+
+    let data = getInfo(obj);
+
+    // console.log(data('username'));
+    console.log(data('role'));
+
+
+
+</script>

@@ -1,0 +1,19 @@
+test = ["1", "2", "3"];
+console.log(test)
+var test;  
+
+const funct1 = makeAdder(5);
+const funct2 = makeAdder(10);
+
+console.log(funct1(2));
+console.log(funct2(2));
+
+function makeAdder(x) {
+  return function (y) {
+    return x - y;
+  };
+}
+
+
+const cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Toyota";

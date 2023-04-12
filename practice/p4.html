@@ -1,0 +1,22 @@
+<script>
+
+
+
+    let arr = [1, 2, 3,3,"x","x", 4, 5, 6, 6, 7, 8];
+
+    let newArr = [];
+
+    let result = arr.filter((item,index,array)=> {
+        if (JSON.stringify(item).match(/[a-zA-Z]/)) {
+            console.log(JSON.stringify(item).match(/[a-zA-Z]/))
+        }else{
+            return array.indexOf(item) !== index
+        }
+        
+    });
+
+    console.log(result);
+
+
+
+</script>

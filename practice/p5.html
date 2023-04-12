@@ -1,0 +1,28 @@
+<script>
+
+
+    let arr = [1,2,3,'x','y',4,5];
+
+    let result = [];
+    let resultObj = {};
+
+    for (let index = 0; index < arr.length; index++) {
+        
+        
+        if (JSON.stringify(arr[index]).match(/[a-zA-Z]/)) {
+            
+         
+            result += arr.indexOf(arr[index]);
+
+        }else {
+            // result += arr[index];
+        }
+        
+    }
+
+    console.log(result)
+    
+    
+
+
+</script>

@@ -1,1 +1,16 @@
-something
+<script>
+
+    
+
+    const promise = new Promise((resovle, reject)=> {
+        let result = setTimeout(()=> {console.log("hello")},1000);
+
+        if (resovle(result)) {
+            console.log("done")
+        }
+    });
+
+    console.log(promise)
+
+
+</script>

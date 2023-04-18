@@ -1,0 +1,12 @@
+<script>
+    const arr = ["something", "nothing", "will", "do", "everything"];
+
+    let result = arr.reduce((collection, array)=> {
+        
+        return collection.length <= array.length ? collection : array;
+
+        
+    });
+
+    console.log(result)
+</script>

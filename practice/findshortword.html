@@ -1,0 +1,23 @@
+<script>
+
+
+
+function displayShortWordsInOrder(words, maxLength) {
+  const shortWords = []; 
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length <= maxLength) { 
+      shortWords.push(words[i]); 
+    }
+  }
+  shortWords.sort((a, b) => a.length - b.length); 
+  return shortWords; 
+}
+
+const words = ["apple", "banana", "orange","kiwi", "pear",  "grape"];
+const maxLength = 5;
+const shortWords = displayShortWordsInOrder(words, maxLength);
+console.log(shortWords); // ["pear", "kiwi", "grape", "apple"]
+
+
+
+</script>

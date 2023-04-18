@@ -1,0 +1,15 @@
+<script>
+
+    let promise = new Promise((resolve, reject)=> {
+        setTimeout(()=>{
+            resolve("done")
+        });
+    });
+
+    promise.then((item)=>console.log(item))
+    promise.catch((error)=>console.log(error, "error"));
+
+    
+
+
+</script>

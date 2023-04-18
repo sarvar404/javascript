@@ -17,3 +17,79 @@ function makeAdder(x) {
 
 const cars = ["Saab", "Volvo", "BMW"];
 cars[0] = "Toyota";
+
+
+// -- In the example beside, CTO has managerId as `1` that is the CEO. 
+// -- Similarly CTO is the manager of Mark.
+// -- Write a query that displays the name of the employee and his manager.
+// select * from employees;
+
+// create table employees (
+//   id int not null primary key,
+//   name varchar(255) not null,
+//   managerId int
+// );
+
+// insert into employees values (1, 'CEO', NULL);
+// insert into employees values (2, 'CTO', 1);
+// insert into employees values (3, 'Mark', 2);
+// const phone = [7, 8, 8, 5, 0, 2, 5, 9, 0, 9];
+// Sudhanshu Kaswan6:29 PM
+// console.log(check(5))
+// const check = (val) => {
+//   return val + 5
+// }
+// You6:30 PM
+// output : 10
+// Sudhanshu Kaswan6:30 PM
+// console.log(check(5))
+// function check (val) {
+//   return val + 5
+// }
+// You6:31 PM
+// output 10
+// You6:33 PM
+// function x () { let x = 10;
+// function inner () { return x }
+// return inner;
+// }
+// You6:34 PM
+// let inner = x ()
+// console.log(inner())
+// Sudhanshu Kaswan6:38 PM
+// var str = "hello"
+// console.log(str.reverse())
+// You6:39 PM
+// ans : olleh
+// Sudhanshu Kaswan6:39 PM
+// console.log(3+4+'5');
+// You6:41 PM
+// ans : 75
+// Sudhanshu Kaswan6:41 PM
+// function value() {
+//   console.log(1);
+//   setTimeout(() => {
+//     console.log(2);
+//   }, 0);
+//   Promise.resolve(3).then((res) => console.log(res));
+//   console.log(4);
+// }
+// value();
+// You6:41 PM
+// ans 1 4 3 2
+// Sudhanshu Kaswan6:42 PM
+// var obj = {
+//    a: 10,
+//    b: () => {
+//       console.log(this.a)
+//    }
+// }
+// obj.b()
+// You6:43 PM
+// ans 10
+// You7:04 PM
+// db.collection.find()
+// db.collection.find({age : {$gt : 24}})
+// You7:05 PM
+// db.collection.find({age : {$gt:24},{name : "john"})
+// kds-jamn-bee
